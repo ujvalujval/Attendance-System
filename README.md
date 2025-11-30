@@ -72,6 +72,23 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 *   `VITE_API_BASE_URL`: The base URL of your backend API.
 
+## Manager Registration
+
+To create a manager account, you need to use the following API endpoint since there is no public registration page for managers.
+
+**Endpoint:** `POST https://attendance-system-bf7b.onrender.com/api/auth/register/manager`
+
+**JSON Body:**
+
+```json
+{
+    "name": "Manager Name",
+    "email": "manager@example.com",
+    "password": "securepassword",
+    "department": "Engineering"
+}
+```
+
 ## How to Run
 
 To run the application, you need to start both the backend and frontend servers.
